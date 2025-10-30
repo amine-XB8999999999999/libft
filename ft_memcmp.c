@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 21:04:20 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:50:00 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:39:57 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

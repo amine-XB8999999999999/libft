@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboussab <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 14:46:35 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/29 23:47:52 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:40:36 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static size_t	w_count(const char *s, char c)

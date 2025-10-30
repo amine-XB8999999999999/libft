@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 20:49:21 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:52:47 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:41:45 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

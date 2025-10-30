@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboussab <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 17:22:59 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/28 18:32:23 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:39:25 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)

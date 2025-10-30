@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 15:31:29 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:42:39 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:42:10 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_toupper(int c)

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboussab <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:38:53 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/28 15:25:57 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 13:43:46 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static char	*ft_convert(char *s, long sub, long n)
@@ -44,6 +45,8 @@ char	*ft_itoa(int n)
 
 	div = 0;
 	i = n;
+	if (n == 0)
+		return(ft_strdup("0"));
 	if (i < 0)
 	{
 		i = i * (-1);

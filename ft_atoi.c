@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:38:57 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/29 22:02:54 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:38:24 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *nptr)

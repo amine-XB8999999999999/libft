@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 17:39:13 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:51:17 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:40:38 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)

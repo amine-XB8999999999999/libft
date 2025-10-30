@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 22:52:44 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:53:21 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 12:22:58 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -23,15 +24,15 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] != 0 && i < len)
 	{
 		j = 0;
-		n = i;
-		while (big[i] == little[j] && i < len && little[j] != 0)
+		n = 0;
+		while (big[i + n] == little[j] && ((i + n) < len) && little[j] != 0)
 		{
 			j++;
-			i++;
+			n++;
 		}
 		if (little[j] == 0)
-			return ((char *)&big[i - j]);
-		i = n + 1;
+			return ((char *)&big[i]);
+		i++;
 	}
 	return (NULL);
 }

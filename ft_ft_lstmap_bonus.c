@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ft_lstmap_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboussab <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:20:55 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/29 10:38:56 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:39:10 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!lst || !f || !del)
 		return (NULL);
-	N_list = ft_lstnew(f(lst->content));
+	N_lst = ft_lstnew(f(lst->content));
 	if (!N_lst)
 		return (NULL);
 	lst = lst->next;
@@ -28,11 +28,11 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		ptr = ft_lstnew(f(lst->content));
 		if (!ptr)
 		{
-			ft_lstclear(N_list, del);
+			ft_lstclear(N_lst, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&N_list,ptr);
+		ft_lstadd_back(&N_lst,ptr);
 		lst = lst->next;
 	}
-	return (N_list);
+	return (N_lst);
 }

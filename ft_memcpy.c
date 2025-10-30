@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:35:34 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:45:57 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:39:55 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:58:00 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:50:28 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:40:00 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)

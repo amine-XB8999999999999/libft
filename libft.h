@@ -7,7 +7,6 @@
 # include <limits.h>
 # include <stdio.h>
 
-typedef unsigned long size_t;
 typedef struct	s_list
 {
 	void *content;

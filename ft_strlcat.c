@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 13:13:57 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 15:22:11 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:41:15 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

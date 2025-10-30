@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 14:33:38 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/29 22:04:31 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:39:53 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

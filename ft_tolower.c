@@ -6,9 +6,10 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 17:29:09 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/24 09:41:12 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:42:07 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_tolower(int c)
