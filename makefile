@@ -6,7 +6,7 @@
 #    By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/30 17:57:12 by aboussab          #+#    #+#              #
-#    Updated: 2025/10/30 17:57:18 by aboussab         ###   ########.fr        #
+#    Updated: 2025/10/31 22:12:49 by aboussab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,27 +46,41 @@ SRCS =  ft_isalpha.c \
         ft_putstr_fd.c \
         ft_putendl_fd.c \
         ft_putnbr_fd.c
-
-CFLAGS = -Wall -Wextra -Werror
+        
+    src_bonus = ft_lstmap_bonus.c \
+        ft_lstadd_back_bonus.c \
+        ft_lstclear_bonus.c \
+        ft_lstiter_bonus.c \
+        ft_lstlast_bonus.c \
+        ft_lstnew_bonus.c \
+        ft_lstdelone_bonus.c \
+        ft_lstadd_front_bonus.c \
+        ft_lstsize_bonus.c
 
 CC = cc
 
+CFLAGS = -Wall -Wextra -Werror
+
 OBJS = $(SRCS:.c=.o)
+
+OBJS_BONUS = $(src_bonus:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+bonus: $(OBJS) $(OBJS_BONUS)
+	ar rcs $(NAME) $(OBJS) $(OBJS_BONUS)
+    
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re

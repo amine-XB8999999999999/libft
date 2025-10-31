@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 18:31:27 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:39:52 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 22:16:27 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 
 	i = 0;
 	if (!lst)
-		return (NULL);
+		return (0);
 	while (lst != NULL)
 	{
 		i++;

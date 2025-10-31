@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:38:57 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/31 13:04:16 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 16:26:28 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,15 @@ int	ft_atoi(const char *nptr)
 		i++;
 	if ((nptr[i] == 45 || nptr[i] == 43) && nptr[i])
 	{
-		if (nptr[i] == 45)
+		if (nptr[i++] == 45)
 			sin = -1;
-		i++;
 	}
 	while (nptr[i] >= 48 && nptr[i] <= 57)
 	{
 		j = nptr[i++] - 48;
 		if ((n > INT_MAX / 10) || (n == INT_MAX / 10 && j > 7 && sin == 1))
 			return (-1);
-		if ((n > 2147483648 / 10) || (n == 2147483648 / 10 && j > 8
-				&& sin == -1))
+		if (n > -(INT_MIN / 10) || (n == -(INT_MIN / 10) && j > 8 && sin == -1))
 			return (0);
 		n = j + (n * 10);
 	}

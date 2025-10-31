@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 17:08:27 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/31 12:54:58 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:18:41 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *s;
-	size_t i;
-	size_t j;
+	char	*s;
+	size_t	i;
+	size_t	j;
 
 	if (!s1 && !s2)
 		return (NULL);

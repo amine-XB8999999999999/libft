@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 21:10:29 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:41:57 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 18:06:06 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	e = ft_strlen(s1) - 1;
 	while (ft_compare(set, s1[b]))
 		b++;
-	while (ft_compare(set, s1[e]))
+	while (e >= b && ft_compare(set, s1[e]))
 		e--;
 	if (b > e)
 		return (ft_strdup(""));

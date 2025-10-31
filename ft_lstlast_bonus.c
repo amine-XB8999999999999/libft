@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 21:57:05 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:39:47 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:08:48 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list  *last_node;
+	t_list	*last_node;
 
 	while (lst->next != NULL)
 		lst = lst->next;

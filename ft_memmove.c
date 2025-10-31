@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:58:00 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:40:00 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 18:05:43 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t				i;
 
 	i = 0;
+	if (!dest && !src)
+		return (NULL);
 	dest2 = dest;
 	src2 = src;
 	if (dest2 > src2)

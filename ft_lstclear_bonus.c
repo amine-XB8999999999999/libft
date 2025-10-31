@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 23:22:52 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:39:27 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:04:10 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list  *curnt;
+	t_list	*curnt;
 	t_list	*nxt;
 
 	if (!lst || !del)
@@ -27,5 +27,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		free(curnt);
 		curnt = nxt;
 	}
-	*lst  = NULL;
+	*lst = NULL;
 }

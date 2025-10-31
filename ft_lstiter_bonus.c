@@ -6,13 +6,13 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 23:47:09 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:39:43 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:05:12 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
 		return ;

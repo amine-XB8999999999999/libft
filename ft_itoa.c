@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:38:53 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 13:43:46 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 16:32:42 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 	div = 0;
 	i = n;
 	if (n == 0)
-		return(ft_strdup("0"));
+		return (ft_strdup("0"));
 	if (i < 0)
 	{
 		i = i * (-1);

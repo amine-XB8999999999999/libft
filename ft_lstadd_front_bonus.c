@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 17:22:59 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:39:25 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 22:15:37 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
-		return (NULL);
+		return ;
 	new -> next = *lst;
 	*lst = new;
 }
