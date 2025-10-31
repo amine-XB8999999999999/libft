@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/aboussab/Desktop/libft",
-      "program": "/home/aboussab/Desktop/libft/build/Debug/outDebug",
+      "cwd": "/home/aboussab/Documents/libftes mer usb",
+      "program": "/home/aboussab/Documents/libftes mer usb/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

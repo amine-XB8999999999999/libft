@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
+/*   By: meryemseghrouchniidrissi <meryemseghrou    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 14:56:51 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:41:42 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 17:45:35 by meryemseghr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s || !f)
 		return (NULL);
-	ptr = (char *)maloc(ft_strlen(s) + 1);
+	ptr = (char *)malloc(ft_strlen(s) + 1);
 	if (!ptr)
 		return (NULL);
 	i = 0;

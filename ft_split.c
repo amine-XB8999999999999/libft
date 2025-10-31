@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
+/*   By: meryemseghrouchniidrissi <meryemseghrou    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 14:46:35 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:40:36 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/30 17:44:08 by meryemseghr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static size_t	w_count(const char *s, char c)
 	return (count);
 }
 
-static char	*del(char **arry, size_t p)
+static char	**del(char **arry, size_t p)
 {
 	while (p > 0)
 		free(arry[--p]);
@@ -84,10 +84,10 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	if (n == 1 && c == '\0')
 	{
-		arry [0] = ft_substr(s, 0, ft_strlen(s));
+		arry[0] = ft_substr(s, 0, ft_strlen(s));
 		if (!arry[0])
 			return (del(arry, 0));
-		arry [1] = NULL;
+		arry[1] = NULL;
 		return (arry);
 	}
 	return (ft_limit(arry, s, c));

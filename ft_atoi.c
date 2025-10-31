@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:38:57 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:38:24 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/10/31 13:04:16 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,31 @@
 
 int	ft_atoi(const char *nptr)
 {
-	unsigned long	n;
-	size_t	i;
-	int	sin;
-	int	j;
+	long long	n;
+	size_t		i;
+	int			sin;
+	int			j;
 
 	i = 0;
 	sin = 1;
 	n = 0;
-	while (nptr[i] <= 32)
+	while ((nptr[i] <= 13 && nptr[i] >= 9) || nptr[i] == 32)
 		i++;
-	if (nptr[i] == 45 || nptr[i] == 43)
+	if ((nptr[i] == 45 || nptr[i] == 43) && nptr[i])
 	{
-		if(nptr[i] == 45)
+		if (nptr[i] == 45)
 			sin = -1;
 		i++;
 	}
 	while (nptr[i] >= 48 && nptr[i] <= 57)
 	{
-		j = nptr[i] - 48;
-		n = j + (n * 10);
-		if (n > 9223372036854775807 && sin == 1)
+		j = nptr[i++] - 48;
+		if ((n > INT_MAX / 10) || (n == INT_MAX / 10 && j > 7 && sin == 1))
 			return (-1);
-		if (n > 9223372036854775807 && sin == -1)
+		if ((n > 2147483648 / 10) || (n == 2147483648 / 10 && j > 8
+				&& sin == -1))
 			return (0);
-		i++;
+		n = j + (n * 10);
 	}
 	return ((int)(n * sin));
 }
