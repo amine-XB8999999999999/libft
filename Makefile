@@ -6,7 +6,7 @@
 #    By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/30 17:57:12 by aboussab          #+#    #+#              #
-#    Updated: 2025/11/01 20:40:07 by aboussab         ###   ########.fr        #
+#    Updated: 2025/11/02 14:59:53 by aboussab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,8 +47,8 @@ SRCS =  ft_isalpha.c \
         ft_putendl_fd.c \
         ft_putnbr_fd.c
         
-    src_bonus = ft_lstmap_bonus.c \
-        ft_lstadd_back_bonus.c \
+    src_bonus = ft_lstadd_back_bonus.c  \
+        ft_lstmap_bonus.c \
         ft_lstclear_bonus.c \
         ft_lstiter_bonus.c \
         ft_lstlast_bonus.c \

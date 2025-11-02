@@ -6,12 +6,12 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 18:06:37 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:40:16 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/11/02 15:37:53 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+ #include <fcntl.h>
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
