@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/aboussab/Documents/libftes mer usb",
-      "program": "/home/aboussab/Documents/libftes mer usb/build/Debug/outDebug",
+      "cwd": "/home/aboussab/Desktop/girepo",
+      "program": "/home/aboussab/Desktop/girepo/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

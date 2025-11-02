@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:35:34 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 11:39:55 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/11/02 09:38:51 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t				i;
 
 	i = 0;
+	if (!dest && !src)
+		return (NULL);
 	dest2 = dest;
 	src2 = src ;
 	while (i < n)

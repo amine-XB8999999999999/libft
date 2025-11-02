@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 16:14:51 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/31 17:10:59 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/11/02 09:55:48 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*nd;
 
-	if (!content)
-		return (NULL);
 	nd = (t_list *)malloc(sizeof(t_list));
 	if (!nd)
 		return (NULL);

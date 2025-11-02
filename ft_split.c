@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meryemseghrouchniidrissi <meryemseghrou    +#+  +:+       +#+        */
+/*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 14:46:35 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 17:44:08 by meryemseghr      ###   ########.fr       */
+/*   Updated: 2025/11/02 09:55:04 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	if (c != '\0')
 		n = w_count(s, c);
+	else if (s[0] == '\0')
+		n = 0;
 	else
 		n = 1;
 	arry = (char **)malloc((n + 1) * sizeof(char *));
