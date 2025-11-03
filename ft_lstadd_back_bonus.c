@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 22:13:02 by aboussab          #+#    #+#             */
-/*   Updated: 2025/11/02 14:58:53 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/11/03 09:12:12 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new ;
 		return ;
 	}
-	ptr = *lst;
-	while (ptr->next != NULL)
-		ptr = ptr->next;
+	ptr = ft_lstlast(*lst);
 	ptr -> next = new;
-	new -> next = NULL;
 }
+
