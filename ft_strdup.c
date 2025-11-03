@@ -6,7 +6,7 @@
 /*   By: aboussab <aboussab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:12:57 by aboussab          #+#    #+#             */
-/*   Updated: 2025/10/30 13:31:26 by aboussab         ###   ########.fr       */
+/*   Updated: 2025/11/03 09:26:45 by aboussab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strdup(const char *s)
 	char	*p;
 	size_t	i;
 
-	if (!s)
-		return (NULL);
 	p = (char *) malloc(ft_strlen(s) + 1);
 	if (!p)
 		return (NULL);
